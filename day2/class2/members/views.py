@@ -5,7 +5,7 @@ from django.shortcuts import render
 def index(request):
     
     context = {
-        "course_list" : ["Django", "python", "DSA", "Machine Learning", "Java"]
+        "course_list" : ["Django", "python", "DSA", "Machine Learning", "Java"],
 
         "student": [{"Name": "Namling Limbu", "Course":"Django"}, {"Name": "Ganga", "Course":"Machine Learning"} ]
     }
