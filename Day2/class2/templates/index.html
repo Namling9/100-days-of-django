@@ -13,11 +13,27 @@
 
     {% endfor %}
     
-    {% for i in student %}
+    <br>
 
-    <div> {{i}} </div>
+    <table>
+        <tr>
+             <th> Name </th> 
+             <th> Roll:NO: </th>
+            
+            </tr>
 
-    {% endfor %}
+            <tr> 
+                {% for i in student %}
+
+               <td> {{i.Name}}</td>
+               <td>{{i.Course}}</td>
+            
+                {% endfor %}
+            </tr>
+
+    
+    </table>
+   
 
     
 </body>
