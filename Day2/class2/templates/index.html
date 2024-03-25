@@ -18,19 +18,20 @@
     <table border="1" cellpadding = "10">
         <tr>
              <th> Name </th> 
-             <th> Roll:NO: </th>
+             <th> Course </th>
             
             </tr>
-
+            
+            {% for i in student %}
             <tr> 
-                {% for i in student %}
+               
 
                <td> {{i.Name}}</td>
                <td>{{i.Course}}</td>
             
-                {% endfor %}
+               
             </tr>
-
+            {% endfor %}
     
     </table>
    
