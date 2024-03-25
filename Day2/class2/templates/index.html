@@ -7,17 +7,23 @@
 </head>
 <body>
 
-    {% for n in course_list%}
-    
     {% if course_list|length > 0 %}
-    <div> {{n}} </div>
-   
+
+        {% for n in course_list %}
+    
+
+             <div> {{n}} </div>
+
+         {% endfor %}
+    
+    
     {% else % }
-    <h2> No course Avaiable </h2>
+          
+         <h2> No course Avaiable </h2>
 
     {% endif %}
-    
-    {% endfor %}
+
+
      
     
     <br>
