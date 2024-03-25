@@ -8,10 +8,17 @@
 <body>
 
     {% for n in course_list%}
-
+    
+    {% if course_list|length > 0 %}
     <div> {{n}} </div>
+   
+    {% else % }
+    <h2> No course Avaiable </h2>
 
+    {% endif %}
+    
     {% endfor %}
+     
     
     <br>
 
